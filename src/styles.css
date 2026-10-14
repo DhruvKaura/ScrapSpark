@@ -1,4 +1,6 @@
 :root {
+  /* Always render in light colours, even when the device uses dark mode */
+  color-scheme: light only;
   --lime: #c9f235;
   --pink: #f9bdea;
   --sky: #a9cdf0;
@@ -721,6 +723,7 @@ h1, h2, h3, h4 { margin: 0; line-height: 1.05; }
 .form label { display: grid; gap: 6px; font-weight: 700; }
 .form input, .form textarea {
   font: inherit;
+  color: var(--ink);
   padding: 12px 14px;
   border: 2px solid var(--ink);
   border-radius: 12px;
